@@ -83,3 +83,9 @@ Edit file `data/idx-watchlist.json` dan tambahkan simbol saham IDX baru.
 Sobri Saham tidak melakukan transaksi otomatis, tidak menjanjikan profit, dan tidak memberi instruksi absolut seperti “wajib beli”.
 
 **Analisis ini bukan nasihat keuangan profesional. Selalu lakukan riset mandiri dan gunakan manajemen risiko.**
+
+## 8) Keamanan Secret
+- Jangan pernah membagikan API key/token asli di chat, issue, atau commit.
+- Jika pernah terekspos, segera **revoke dan rotate** semua key terkait sebelum dipakai lagi.
+- Lihat panduan singkat di `SECURITY.md`.
+
