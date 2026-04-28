@@ -59,6 +59,11 @@ curl -X POST "https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/setWebhook" \
   -d "secret_token=<TELEGRAM_WEBHOOK_SECRET>"
 ```
 
+### Keamanan Token Telegram (Penting)
+- Simpan token bot hanya di `.env` lokal dan Environment Variables (mis. Vercel), jangan di source code atau chat publik.
+- Jika token pernah terekspos, segera lakukan rotasi dari BotFather (`/revoke`) lalu update `TELEGRAM_BOT_TOKEN` di semua environment.
+- Setelah rotasi token, ulangi `setWebhook` agar webhook menggunakan token baru.
+
 Command didukung:
 - `/start`
 - `/menu`
